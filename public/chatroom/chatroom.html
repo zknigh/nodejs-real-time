@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Simple chatroom</title>
+        <link rel="stylesheet" href="chat.css">
+    </head>
+    <body>
+        <div class="chat-container">
+                <!-- 头 -->
+            <div class="chat-header">
+                <button id="currentRoomLabel" class="room">
+                    <span id="roomName">---</span>
+                </button>
+                <button id="openModalBtn" class="floating-plus">+</button>
+            </div>
+            <!-- 输入框 -->
+            <div class="chat-messages" id="Messages"></div>
+            <div class="chat-input">
+                <textarea id="input" rows="1" placeholder="Type your message..." ></textarea>
+                <button id="sendButton">send</button>
+            </div>
+        </div>
+        <!--隐藏 -->
+            <div class="hideroom hidden" id="hideroom">
+                <div class="room-content">
+                    <input id="roomInput" placeholder="输入房间名">
+                    <button id="joinRoom">加入房间</button>
+                </div>
+            </div>
+            <div id="roomModal" class="modal hidden">
+                <div class="modal-content">
+                    <input type="file" id="fileInput" />
+                    <button id="sendFileBtn">发送文件</button>
+                </div>
+            </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="chat.js"></script>
+    </body>
+</html>

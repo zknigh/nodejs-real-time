@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, "微软雅黑", sans-serif;
+    display: flex;
+    height:100vh;
+    margin:0;
+    background-color : rgba(52, 50, 57, 0.881);
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    background-color: #343739;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(43, 44, 44, 0.717);
+    width: 270px;
+    height: 350px;
+}
+.login-container h1{
+    text-align:center;
+    color:rgb(176, 100, 211);
+}
+.login-container input{
+display:block;
+width: 80%;
+margin:auto;
+margin-bottom: 30px;
+padding: 10px 10px 10px 10px;
+border: 3px solid rgb(114,71,194);
+border-radius:15px;
+background-color: rgba(41, 30, 49, 0.467);
+}
+.login-container button{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    height: 40px;
+    width: 60%;
+    font-size:20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    color: rgb(176, 100, 211);
+    border: 2px solid rgb(176, 100, 211);
+
+}
+.login-container button:hover {
+    background-color: rgba(176, 100, 211, 0.1);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.login-container button:active {
+    background-color: rgba(176, 100, 211, 0.2);
+    transform: scale(0.98);
+    box-shadow: 0 0 5px rgba(176, 100, 211, 0.6);
+}
+.login-container input:hover {
+    border-color: rgb(176, 100, 211);
+    background-color: rgba(60, 40, 80, 0.5);
+    transition: all 0.3s ease;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: rgb(225, 130, 255);
+    box-shadow: 0 0 8px rgba(176, 100, 211, 0.6);
+    background-color: rgba(60, 40, 80, 0.6);
+    color: #fff;
+}
+.login-container input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
